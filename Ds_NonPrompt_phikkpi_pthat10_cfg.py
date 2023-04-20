@@ -58,7 +58,7 @@ partonfilter = cms.EDFilter("PythiaFilter",
 
 DsDaufilter = cms.EDFilter("PythiaMomDauFilter",
                            ParticleID = cms.untracked.int32(431), #Ds+
-                           MomMinPt = cms.untracked.double(15),
+                           MomMinPt = cms.untracked.double(20),
                            MomMinEta = cms.untracked.double(-2.4),
                            MomMaxEta = cms.untracked.double(2.4),
                            DaughterIDs = cms.untracked.vint32(333, 211), #phi,pi+
@@ -69,7 +69,7 @@ DsDaufilter = cms.EDFilter("PythiaMomDauFilter",
                        )
 Dsrapidityfilter = cms.EDFilter("PythiaFilter",
                                 ParticleID = cms.untracked.int32(431),
-                                MinPt = cms.untracked.double(15),#pT threshold
+                                MinPt = cms.untracked.double(20),#pT threshold
                                 MaxPt = cms.untracked.double(500.),
                                 MinRapidity = cms.untracked.double(-2.4),
                                 MaxRapidity = cms.untracked.double(2.4),
